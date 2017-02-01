@@ -1,0 +1,4 @@
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/edit_cache.dir
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/rebuild_cache.dir
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/gameOfLife.dir
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/distclean.dir

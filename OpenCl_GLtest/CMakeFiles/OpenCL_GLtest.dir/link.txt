@@ -1,0 +1,1 @@
+/usr/local/bin/gcc-6   -Wno-deprecated-declarations -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/OpenCL_GLtest.dir/main.c.o CMakeFiles/OpenCL_GLtest.dir/applyRules_OpenCL.c.o  -o OpenCL_GLtest  -framework OpenCL -framework OpenGL -framework GLUT -framework Cocoa /usr/local/lib/libGLEW.dylib 

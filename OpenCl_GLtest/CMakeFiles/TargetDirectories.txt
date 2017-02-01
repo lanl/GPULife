@@ -1,0 +1,4 @@
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/CMakeFiles/edit_cache.dir
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/CMakeFiles/rebuild_cache.dir
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/CMakeFiles/OpenCL_GLtest.dir
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/CMakeFiles/distclean.dir

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/applyRules_OpenCL.c
+OpenCL/cl_gl.h
+-
+CL/cl_gl.h
+-
+stdio.h
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/stdio.h
+stdlib.h
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/stdlib.h
+
+/Users/brobey/Programs/GPULife/OpenCl_GLtest/main.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+GL/glew.h
+-
+OpenCL/OpenCL.h
+-
+OpenCL/cl_gl.h
+-
+CL/cl.h
+-
+OpenGL/gl3.h
+-
+GLUT/glut.h
+-
+GL/glut.h
+-
+time.h
+-
+

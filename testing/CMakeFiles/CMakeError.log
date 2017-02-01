@@ -1,0 +1,1494 @@
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7eb87/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7eb87.dir/build.make CMakeFiles/cmTC_7eb87.dir/build
+Building C object CMakeFiles/cmTC_7eb87.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -fopenacc   -o CMakeFiles/cmTC_7eb87.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-fopenacc'
+make[1]: *** [CMakeFiles/cmTC_7eb87.dir/src.c.o] Error 1
+make: *** [cmTC_7eb87/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_561ab/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_561ab.dir/build.make CMakeFiles/cmTC_561ab.dir/build
+Building C object CMakeFiles/cmTC_561ab.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -acc -ta=tesla:nordc   -o CMakeFiles/cmTC_561ab.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-ta=tesla:nordc'
+make[1]: *** [CMakeFiles/cmTC_561ab.dir/src.c.o] Error 1
+make: *** [cmTC_561ab/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_76700/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_76700.dir/build.make CMakeFiles/cmTC_76700.dir/build
+Building C object CMakeFiles/cmTC_76700.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_76700.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_76700.dir/src.c.o] Error 1
+make: *** [cmTC_76700/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4572d/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4572d.dir/build.make CMakeFiles/cmTC_4572d.dir/build
+Building C object CMakeFiles/cmTC_4572d.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_4572d.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4572d.dir/src.c.o] Error 1
+make: *** [cmTC_4572d/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6c589/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_6c589.dir/build.make CMakeFiles/cmTC_6c589.dir/build
+Building C object CMakeFiles/cmTC_6c589.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_6c589.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_6c589.dir/src.c.o] Error 1
+make: *** [cmTC_6c589/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95970/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_95970.dir/build.make CMakeFiles/cmTC_95970.dir/build
+Building C object CMakeFiles/cmTC_95970.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_95970.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_95970.dir/src.c.o] Error 1
+make: *** [cmTC_95970/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_39b74/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_39b74.dir/build.make CMakeFiles/cmTC_39b74.dir/build
+Building C object CMakeFiles/cmTC_39b74.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_39b74.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_39b74.dir/src.c.o] Error 1
+make: *** [cmTC_39b74/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8705/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c8705.dir/build.make CMakeFiles/cmTC_c8705.dir/build
+Building C object CMakeFiles/cmTC_c8705.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_c8705.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c8705.dir/src.c.o] Error 1
+make: *** [cmTC_c8705/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b64fc/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b64fc.dir/build.make CMakeFiles/cmTC_b64fc.dir/build
+Building C object CMakeFiles/cmTC_b64fc.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_b64fc.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_b64fc.dir/src.c.o] Error 1
+make: *** [cmTC_b64fc/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00cc2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_00cc2.dir/build.make CMakeFiles/cmTC_00cc2.dir/build
+Building C object CMakeFiles/cmTC_00cc2.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_00cc2.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_00cc2.dir/src.c.o] Error 1
+make: *** [cmTC_00cc2/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_436ff/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_436ff.dir/build.make CMakeFiles/cmTC_436ff.dir/build
+Building C object CMakeFiles/cmTC_436ff.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_436ff.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_436ff.dir/src.c.o] Error 1
+make: *** [cmTC_436ff/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e392f/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e392f.dir/build.make CMakeFiles/cmTC_e392f.dir/build
+Building C object CMakeFiles/cmTC_e392f.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_e392f.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_e392f.dir/src.c.o] Error 1
+make: *** [cmTC_e392f/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e86e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2e86e.dir/build.make CMakeFiles/cmTC_2e86e.dir/build
+Building CXX object CMakeFiles/cmTC_2e86e.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_2e86e.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_2e86e.dir/src.cxx.o] Error 1
+make: *** [cmTC_2e86e/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb8c2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_eb8c2.dir/build.make CMakeFiles/cmTC_eb8c2.dir/build
+Building CXX object CMakeFiles/cmTC_eb8c2.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_eb8c2.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_eb8c2.dir/src.cxx.o] Error 1
+make: *** [cmTC_eb8c2/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07504/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_07504.dir/build.make CMakeFiles/cmTC_07504.dir/build
+Building CXX object CMakeFiles/cmTC_07504.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_07504.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_07504.dir/src.cxx.o] Error 1
+make: *** [cmTC_07504/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e15aa/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e15aa.dir/build.make CMakeFiles/cmTC_e15aa.dir/build
+Building CXX object CMakeFiles/cmTC_e15aa.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_e15aa.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_e15aa.dir/src.cxx.o] Error 1
+make: *** [cmTC_e15aa/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_93140/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_93140.dir/build.make CMakeFiles/cmTC_93140.dir/build
+Building CXX object CMakeFiles/cmTC_93140.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_93140.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_93140.dir/src.cxx.o] Error 1
+make: *** [cmTC_93140/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca630/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ca630.dir/build.make CMakeFiles/cmTC_ca630.dir/build
+Building CXX object CMakeFiles/cmTC_ca630.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_ca630.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ca630.dir/src.cxx.o] Error 1
+make: *** [cmTC_ca630/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eff49/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_eff49.dir/build.make CMakeFiles/cmTC_eff49.dir/build
+Building CXX object CMakeFiles/cmTC_eff49.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_eff49.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_eff49.dir/src.cxx.o] Error 1
+make: *** [cmTC_eff49/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a20d0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a20d0.dir/build.make CMakeFiles/cmTC_a20d0.dir/build
+Building CXX object CMakeFiles/cmTC_a20d0.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_a20d0.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_a20d0.dir/src.cxx.o] Error 1
+make: *** [cmTC_a20d0/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd1c1/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_bd1c1.dir/build.make CMakeFiles/cmTC_bd1c1.dir/build
+Building CXX object CMakeFiles/cmTC_bd1c1.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_bd1c1.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_bd1c1.dir/src.cxx.o] Error 1
+make: *** [cmTC_bd1c1/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_da2ff/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_da2ff.dir/build.make CMakeFiles/cmTC_da2ff.dir/build
+Building CXX object CMakeFiles/cmTC_da2ff.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_da2ff.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_da2ff.dir/src.cxx.o] Error 1
+make: *** [cmTC_da2ff/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a485b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a485b.dir/build.make CMakeFiles/cmTC_a485b.dir/build
+Building C object CMakeFiles/cmTC_a485b.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -fopenacc   -o CMakeFiles/cmTC_a485b.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-fopenacc'
+make[1]: *** [CMakeFiles/cmTC_a485b.dir/src.c.o] Error 1
+make: *** [cmTC_a485b/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7ea1b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7ea1b.dir/build.make CMakeFiles/cmTC_7ea1b.dir/build
+Building C object CMakeFiles/cmTC_7ea1b.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -acc -ta=tesla:nordc   -o CMakeFiles/cmTC_7ea1b.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-ta=tesla:nordc'
+make[1]: *** [CMakeFiles/cmTC_7ea1b.dir/src.c.o] Error 1
+make: *** [cmTC_7ea1b/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4ad10/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4ad10.dir/build.make CMakeFiles/cmTC_4ad10.dir/build
+Building C object CMakeFiles/cmTC_4ad10.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_4ad10.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_4ad10.dir/src.c.o] Error 1
+make: *** [cmTC_4ad10/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0083e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0083e.dir/build.make CMakeFiles/cmTC_0083e.dir/build
+Building C object CMakeFiles/cmTC_0083e.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_0083e.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0083e.dir/src.c.o] Error 1
+make: *** [cmTC_0083e/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2774/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f2774.dir/build.make CMakeFiles/cmTC_f2774.dir/build
+Building C object CMakeFiles/cmTC_f2774.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_f2774.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_f2774.dir/src.c.o] Error 1
+make: *** [cmTC_f2774/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d1226/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_d1226.dir/build.make CMakeFiles/cmTC_d1226.dir/build
+Building C object CMakeFiles/cmTC_d1226.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_d1226.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_d1226.dir/src.c.o] Error 1
+make: *** [cmTC_d1226/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56007/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56007.dir/build.make CMakeFiles/cmTC_56007.dir/build
+Building C object CMakeFiles/cmTC_56007.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_56007.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_56007.dir/src.c.o] Error 1
+make: *** [cmTC_56007/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b73e7/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b73e7.dir/build.make CMakeFiles/cmTC_b73e7.dir/build
+Building C object CMakeFiles/cmTC_b73e7.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_b73e7.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b73e7.dir/src.c.o] Error 1
+make: *** [cmTC_b73e7/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3aef/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c3aef.dir/build.make CMakeFiles/cmTC_c3aef.dir/build
+Building C object CMakeFiles/cmTC_c3aef.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_c3aef.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_c3aef.dir/src.c.o] Error 1
+make: *** [cmTC_c3aef/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3916/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b3916.dir/build.make CMakeFiles/cmTC_b3916.dir/build
+Building C object CMakeFiles/cmTC_b3916.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_b3916.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_b3916.dir/src.c.o] Error 1
+make: *** [cmTC_b3916/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1977b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1977b.dir/build.make CMakeFiles/cmTC_1977b.dir/build
+Building C object CMakeFiles/cmTC_1977b.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_1977b.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_1977b.dir/src.c.o] Error 1
+make: *** [cmTC_1977b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc5b5/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_dc5b5.dir/build.make CMakeFiles/cmTC_dc5b5.dir/build
+Building C object CMakeFiles/cmTC_dc5b5.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_dc5b5.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_dc5b5.dir/src.c.o] Error 1
+make: *** [cmTC_dc5b5/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7e259/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_7e259.dir/build.make CMakeFiles/cmTC_7e259.dir/build
+Building CXX object CMakeFiles/cmTC_7e259.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_7e259.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[1]: *** [CMakeFiles/cmTC_7e259.dir/src.cxx.o] Error 1
+make: *** [cmTC_7e259/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_16b9c/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_16b9c.dir/build.make CMakeFiles/cmTC_16b9c.dir/build
+Building CXX object CMakeFiles/cmTC_16b9c.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_16b9c.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_16b9c.dir/src.cxx.o] Error 1
+make: *** [cmTC_16b9c/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02b79/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_02b79.dir/build.make CMakeFiles/cmTC_02b79.dir/build
+Building CXX object CMakeFiles/cmTC_02b79.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_02b79.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_02b79.dir/src.cxx.o] Error 1
+make: *** [cmTC_02b79/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9fa08/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9fa08.dir/build.make CMakeFiles/cmTC_9fa08.dir/build
+Building CXX object CMakeFiles/cmTC_9fa08.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_9fa08.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '/openmp'
+make[1]: *** [CMakeFiles/cmTC_9fa08.dir/src.cxx.o] Error 1
+make: *** [cmTC_9fa08/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ed07/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9ed07.dir/build.make CMakeFiles/cmTC_9ed07.dir/build
+Building CXX object CMakeFiles/cmTC_9ed07.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_9ed07.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-Qopenmp'
+make[1]: *** [CMakeFiles/cmTC_9ed07.dir/src.cxx.o] Error 1
+make: *** [cmTC_9ed07/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e65db/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e65db.dir/build.make CMakeFiles/cmTC_e65db.dir/build
+Building CXX object CMakeFiles/cmTC_e65db.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_e65db.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e65db.dir/src.cxx.o] Error 1
+make: *** [cmTC_e65db/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4cb2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f4cb2.dir/build.make CMakeFiles/cmTC_f4cb2.dir/build
+Building CXX object CMakeFiles/cmTC_f4cb2.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_f4cb2.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx: 'linker' input unused
+make[1]: *** [CMakeFiles/cmTC_f4cb2.dir/src.cxx.o] Error 1
+make: *** [cmTC_f4cb2/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1c8a/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f1c8a.dir/build.make CMakeFiles/cmTC_f1c8a.dir/build
+Building CXX object CMakeFiles/cmTC_f1c8a.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_f1c8a.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '+Oopenmp'
+make[1]: *** [CMakeFiles/cmTC_f1c8a.dir/src.cxx.o] Error 1
+make: *** [cmTC_f1c8a/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6a86/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c6a86.dir/build.make CMakeFiles/cmTC_c6a86.dir/build
+Building CXX object CMakeFiles/cmTC_c6a86.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_c6a86.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-qsmp'
+make[1]: *** [CMakeFiles/cmTC_c6a86.dir/src.cxx.o] Error 1
+make: *** [cmTC_c6a86/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd7ac/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cd7ac.dir/build.make CMakeFiles/cmTC_cd7ac.dir/build
+Building CXX object CMakeFiles/cmTC_cd7ac.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_cd7ac.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-mp'
+make[1]: *** [CMakeFiles/cmTC_cd7ac.dir/src.cxx.o] Error 1
+make: *** [cmTC_cd7ac/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfdee/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cfdee.dir/build.make CMakeFiles/cmTC_cfdee.dir/build
+Building C object CMakeFiles/cmTC_cfdee.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -fopenacc   -o CMakeFiles/cmTC_cfdee.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-fopenacc'
+make[2]: *** [CMakeFiles/cmTC_cfdee.dir/src.c.o] Error 1
+make[1]: *** [cmTC_cfdee/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenACC_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dacd4/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_dacd4.dir/build.make CMakeFiles/cmTC_dacd4.dir/build
+Building C object CMakeFiles/cmTC_dacd4.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenACC_FLAG_DETECTED -acc -ta=tesla:nordc   -o CMakeFiles/cmTC_dacd4.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-ta=tesla:nordc'
+make[2]: *** [CMakeFiles/cmTC_dacd4.dir/src.c.o] Error 1
+make[1]: *** [cmTC_dacd4/fast] Error 2
+
+Source file was:
+
+#include <openacc.h>
+int main() {
+#ifdef _OPENACC
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b4852/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b4852.dir/build.make CMakeFiles/cmTC_b4852.dir/build
+Building C object CMakeFiles/cmTC_b4852.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_b4852.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_b4852.dir/src.c.o] Error 1
+make[1]: *** [cmTC_b4852/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9fc41/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9fc41.dir/build.make CMakeFiles/cmTC_9fc41.dir/build
+Building C object CMakeFiles/cmTC_9fc41.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_9fc41.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTC_9fc41.dir/src.c.o] Error 1
+make[1]: *** [cmTC_9fc41/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77919/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_77919.dir/build.make CMakeFiles/cmTC_77919.dir/build
+Building C object CMakeFiles/cmTC_77919.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_77919.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unsupported option '-fopenmp'
+make[2]: *** [CMakeFiles/cmTC_77919.dir/src.c.o] Error 1
+make[1]: *** [cmTC_77919/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9120e/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9120e.dir/build.make CMakeFiles/cmTC_9120e.dir/build
+Building C object CMakeFiles/cmTC_9120e.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_9120e.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '/openmp'
+make[2]: *** [CMakeFiles/cmTC_9120e.dir/src.c.o] Error 1
+make[1]: *** [cmTC_9120e/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_769aa/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_769aa.dir/build.make CMakeFiles/cmTC_769aa.dir/build
+Building C object CMakeFiles/cmTC_769aa.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_769aa.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-Qopenmp'
+make[2]: *** [CMakeFiles/cmTC_769aa.dir/src.c.o] Error 1
+make[1]: *** [cmTC_769aa/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_88518/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_88518.dir/build.make CMakeFiles/cmTC_88518.dir/build
+Building C object CMakeFiles/cmTC_88518.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_88518.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTC_88518.dir/src.c.o] Error 1
+make[1]: *** [cmTC_88518/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e8fd4/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_e8fd4.dir/build.make CMakeFiles/cmTC_e8fd4.dir/build
+Building C object CMakeFiles/cmTC_e8fd4.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_e8fd4.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c: 'linker' input unused
+make[2]: *** [CMakeFiles/cmTC_e8fd4.dir/src.c.o] Error 1
+make[1]: *** [cmTC_e8fd4/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ba79b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ba79b.dir/build.make CMakeFiles/cmTC_ba79b.dir/build
+Building C object CMakeFiles/cmTC_ba79b.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_ba79b.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: no such file or directory: '+Oopenmp'
+make[2]: *** [CMakeFiles/cmTC_ba79b.dir/src.c.o] Error 1
+make[1]: *** [cmTC_ba79b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_df8db/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_df8db.dir/build.make CMakeFiles/cmTC_df8db.dir/build
+Building C object CMakeFiles/cmTC_df8db.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_df8db.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-qsmp'
+make[2]: *** [CMakeFiles/cmTC_df8db.dir/src.c.o] Error 1
+make[1]: *** [cmTC_df8db/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4da47/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4da47.dir/build.make CMakeFiles/cmTC_4da47.dir/build
+Building C object CMakeFiles/cmTC_4da47.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_4da47.dir/src.c.o   -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mp'
+make[2]: *** [CMakeFiles/cmTC_4da47.dir/src.c.o] Error 1
+make[1]: *** [cmTC_4da47/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b6f3b/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b6f3b.dir/build.make CMakeFiles/cmTC_b6f3b.dir/build
+Building CXX object CMakeFiles/cmTC_b6f3b.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp=libomp   -o CMakeFiles/cmTC_b6f3b.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported argument 'libomp' to option 'fopenmp='
+make[2]: *** [CMakeFiles/cmTC_b6f3b.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_b6f3b/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f03c6/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f03c6.dir/build.make CMakeFiles/cmTC_f03c6.dir/build
+Building CXX object CMakeFiles/cmTC_f03c6.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED   -o CMakeFiles/cmTC_f03c6.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTC_f03c6.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_f03c6/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b6343/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b6343.dir/build.make CMakeFiles/cmTC_b6343.dir/build
+Building CXX object CMakeFiles/cmTC_b6343.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_b6343.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fopenmp'
+make[2]: *** [CMakeFiles/cmTC_b6343.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_b6343/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5b4b1/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5b4b1.dir/build.make CMakeFiles/cmTC_5b4b1.dir/build
+Building CXX object CMakeFiles/cmTC_5b4b1.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED /openmp   -o CMakeFiles/cmTC_5b4b1.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '/openmp'
+make[2]: *** [CMakeFiles/cmTC_5b4b1.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_5b4b1/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a820d/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a820d.dir/build.make CMakeFiles/cmTC_a820d.dir/build
+Building CXX object CMakeFiles/cmTC_a820d.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -Qopenmp   -o CMakeFiles/cmTC_a820d.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-Qopenmp'
+make[2]: *** [CMakeFiles/cmTC_a820d.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_a820d/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_461a2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_461a2.dir/build.make CMakeFiles/cmTC_461a2.dir/build
+Building CXX object CMakeFiles/cmTC_461a2.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -openmp   -o CMakeFiles/cmTC_461a2.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+/Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'omp.h' file not found
+#include <omp.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTC_461a2.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_461a2/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3e31d/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3e31d.dir/build.make CMakeFiles/cmTC_3e31d.dir/build
+Building CXX object CMakeFiles/cmTC_3e31d.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -xopenmp   -o CMakeFiles/cmTC_3e31d.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: language not recognized: 'openmp'
+clang: warning: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx: 'linker' input unused
+make[2]: *** [CMakeFiles/cmTC_3e31d.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_3e31d/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_449e0/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_449e0.dir/build.make CMakeFiles/cmTC_449e0.dir/build
+Building CXX object CMakeFiles/cmTC_449e0.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED +Oopenmp   -o CMakeFiles/cmTC_449e0.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: no such file or directory: '+Oopenmp'
+make[2]: *** [CMakeFiles/cmTC_449e0.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_449e0/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e926/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0e926.dir/build.make CMakeFiles/cmTC_0e926.dir/build
+Building CXX object CMakeFiles/cmTC_0e926.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -qsmp   -o CMakeFiles/cmTC_0e926.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-qsmp'
+make[2]: *** [CMakeFiles/cmTC_0e926.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_0e926/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9baf2/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_9baf2.dir/build.make CMakeFiles/cmTC_9baf2.dir/build
+Building CXX object CMakeFiles/cmTC_9baf2.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -DOpenMP_FLAG_DETECTED -mp   -o CMakeFiles/cmTC_9baf2.dir/src.cxx.o -c /Users/brobey/Programs/GPULife/testing/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-mp'
+make[2]: *** [CMakeFiles/cmTC_9baf2.dir/src.cxx.o] Error 1
+make[1]: *** [cmTC_9baf2/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
